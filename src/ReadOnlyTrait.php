@@ -160,7 +160,7 @@ trait ReadOnlyTrait
      * Throws ReadOnlyException on touch
      * @throws ReadOnlyException
      */
-    public function touch()
+    public function touch($attribute = null)
     {
         throw new ReadOnlyException(__FUNCTION__, get_called_class());
     }
